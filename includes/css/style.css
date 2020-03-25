@@ -7,6 +7,7 @@ html, body {
 }
 
 .viweport {
+    margin: 10px;
     display: grid; 
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
@@ -34,12 +35,20 @@ html, body {
     height: 100%;
 }
 
+.main-search-form-buttons {
+    margin-top: 45px;
+    justify-self: center;
+}
+
 .main-image {
     margin-top: 109px;
+    justify-self: center;
 }
 
 .headerbar {
     grid-area: headerbar;
+    height: 40px;
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -54,8 +63,13 @@ html, body {
 
 .footerbar {
     grid-area: footerbar;
+    height: 40px;
+    margin-top: -50px;
+    border-top: 1px solid #dadada;
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: #ebebeb;
 }
 
 .footerbar-left {
