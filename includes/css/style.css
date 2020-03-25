@@ -8,6 +8,7 @@ html, body {
 
 .viweport {
     margin: 10px;
+    min-height: 100vh;
     display: grid; 
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
@@ -63,8 +64,8 @@ html, body {
 
 .footerbar {
     grid-area: footerbar;
+    width: 100%;
     height: 40px;
-    margin-top: -50px;
     border-top: 1px solid #dadada;
     align-items: center;
     display: grid;
