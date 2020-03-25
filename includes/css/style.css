@@ -1,7 +1,27 @@
 .main {
-    display: grid;    
+    display: grid; 
+    justify-content: center;
+}
+
+.main-search-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .main-image {
     height: 233px;
+}
+
+.headerbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.headerbar-left {
+    justify-self: left;
+}
+
+.headerbar-right {
+    justify-self: right;
 }
