@@ -1,19 +1,45 @@
-.main {
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.viweport {
     display: grid; 
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "headerbar"
+        "main"
+        "footerbar";
+}
+
+.main {
     justify-content: center;
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .main-search-form {
     display: grid;
-    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    width: 482px;
+    height: 44px;
+}
+
+.main-search-form-input {
+    width: 100%;
+    height: 100%;
 }
 
 .main-image {
-    height: 233px;
+    margin-top: 109px;
 }
 
 .headerbar {
+    grid-area: headerbar;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -23,5 +49,19 @@
 }
 
 .headerbar-right {
+    justify-self: right;
+}
+
+.footerbar {
+    grid-area: footerbar;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footerbar-left {
+    justify-self: left;
+}
+
+.footerbar-right {
     justify-self: right;
 }
